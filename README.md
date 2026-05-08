@@ -1,6 +1,6 @@
 # Movie Recommendation ETL Pipeline
 
-A simple end-to-end data pipeline that extracts raw movie rating data, transforms it into personalised recommendations, and loads the results into a PostgreSQL database.
+An end-to-end data pipeline that extracts raw movie rating data, transforms it into personalised recommendations, and loads the results into a PostgreSQL database.
 
 Built as a practical introduction to ETL concepts after completing the Introduction to Data Engineering course on DataCamp.
 
@@ -11,8 +11,9 @@ Built as a practical introduction to ETL concepts after completing the Introduct
 For any given user, the pipeline:
 1. Identifies their preferred genre based on their rating history
 2. Filters out movies they have already seen
-3. Ranks remaining eligible movies by average rating (minimum 50 ratings to ensure reliability)
-4. Returns the top 3 recommendations and stores them in a database
+3. Excludes movies with fewer than 50 ratings to ensure statistical reliability
+4. Ranks remaining eligible movies by average rating
+5. Returns the top 3 recommendations and stores them in a database
 
 ---
 
@@ -97,13 +98,14 @@ python main.py
 
 ---
 
+<img width="1010" height="292" alt="image" src="https://github.com/user-attachments/assets/877aecd5-ac57-4e12-9b34-f0cff69edf0d" />
+
+
 ## Sample Output
 
-```
-User 1 → Schindler's List (1993), Casablanca (1942), To Kill a Mockingbird (1962)
-User 4 → Close Shave, A (1995), Rear Window (1954), Usual Suspects, The (1995)
-User 5 → North by Northwest (1959), As Good As It Gets (1997), Cinema Paradiso (1988)
-```
+<img width="939" height="559" alt="image" src="https://github.com/user-attachments/assets/06eeb2bb-70aa-4382-b1e0-ab89773e9d94" />
+
+
 
 ---
 
