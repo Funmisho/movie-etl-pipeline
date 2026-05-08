@@ -8,8 +8,8 @@ RATINGS_PATH = "../data/u.data"
 
 DB_CONFIG = {
     "user": "postgres",
-    "password": "020403",
-    "host": "172.18.32.1",
+    "password": "xxxxxx",
+    "host": "xxxxxx",
     "port": "5432",
     "database": "movie_pipeline"
 }
