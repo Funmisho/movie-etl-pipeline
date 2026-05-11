@@ -1,6 +1,6 @@
 # Movie Recommendation ETL Pipeline
 
-An end-to-end data pipeline that extracts raw movie rating data, transforms it into personalised recommendations, and loads the results into a PostgreSQL database.
+An end-to-end ETL pipeline that extracts raw movie rating data, transforms it into personalised recommendations, and loads the results into a PostgreSQL database.
 
 Built as a practical introduction to ETL concepts after completing the Introduction to Data Engineering course on DataCamp.
 
@@ -105,7 +105,18 @@ python main.py
 
 <img width="939" height="559" alt="image" src="https://github.com/user-attachments/assets/06eeb2bb-70aa-4382-b1e0-ab89773e9d94" />
 
+---
 
+## Key Engineering Concepts Demonstrated
+
+- ETL pipeline design
+- Data extraction from heterogeneous raw files (pipe-separated, tab-separated, mixed encodings)
+- Data cleaning and transformation with pandas
+- Recommendation generation logic (genre inference, eligibility filtering, rating threshold)
+- PostgreSQL integration with SQLAlchemy
+- Cross-environment networking (WSL2 ↔ Windows PostgreSQL)
+- Idempotent database loading (delete before insert to prevent duplicates)
+- Modular pipeline architecture (extract / transform / load / main)
 
 ---
 
