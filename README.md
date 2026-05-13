@@ -2,7 +2,6 @@
 
 An end-to-end ETL pipeline that extracts raw movie rating data, transforms it into personalised recommendations, and loads the results into a PostgreSQL database.
 
-Built as a practical introduction to ETL concepts after completing the Introduction to Data Engineering course on DataCamp.
 
 ---
 
